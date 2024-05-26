@@ -1,0 +1,32 @@
+title="README.yml"
+# Plasma Widget Integrating with Traggo API
+
+# Overview
+This Plasma widget integrates with the Traggo API to display a list of tasks. Users can click on each task, which starts the timer for that task. The timer is temporarily updated by started apps from the Traggo API.
+
+## API Integration
+* Traggo API: `https://api.traggo.com/tasks` (GET request)
+* Traggo API: `https://api.traggo.com/times` (POST request)
+
+# Widget Functionality
+## Task List
+The widget displays a list of tasks fetched from the Traggo API.
+
+## Task Click
+When a user clicks on a task, the timer for that task starts.
+
+## Timer Update
+The Traggo API updates the timer in real-time as users start and stop apps.
+
+# Technical Details
+* This widget is built using Plasma's QML framework.
+* It uses the QtWebEngine module to make API requests.
+* The Traggo API returns JSON data, which is parsed and used to populate the task list and update the timer.
+
+# Future Development
+## Enhancements
+1. Add support for multiple tasks with overlapping timers.
+2. Implement a "Stop All" button to stop all running timers at once.
+3. Enhance the widget's design to better visualize the timer states (e.g., separate indicators for started, paused, and stopped timers).
+
+This README file provides an overview of the Plasma widget integrating with the Traggo API. If you have any questions or would like to contribute to this project, please feel free to reach out!
